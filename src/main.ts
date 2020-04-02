@@ -7,11 +7,11 @@ async function run() {
     const github_token = core.getInput('GITHUB_TOKEN');
 
     const context = github.context;
-    if (context.payload.issue == null) {
+    if (context.event.issue == null) {
         core.setFailed('No issue found.');
         return;
     }
-    const issue_number = context.payload.issue.number;
+    const issue_number = context.event.issue.number;
 
     const octokit = new github.GitHub(github_token);
     const new_comment = octokit.issues.createComment({
