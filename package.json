@@ -1,7 +1,7 @@
 {
-  "name": "actions-comment-pull-request",
-  "version": "1.0.0",
-  "description": "GitHub action for commenting pull-request",
+  "name": "actions-comment-on-issue",
+  "version": "1.0.2",
+  "description": "GitHub action for commenting on issues",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -9,21 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thollander/actions-comment-pull-request"
+    "url": "git+https://github.com/ben-z/actions-comment-on-issue.git"
   },
   "keywords": [
     "actions",
     "container",
-    "pull-request",
+    "issue",
     "comment",
     "message"
   ],
-  "author": "Térence Hollander",
+  "author": "Ben Zhang and Térence Hollander",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thollander/actions-comment-pull-request/issues"
+    "url": "https://github.com/ben-z/actions-comment-on-issue/issues"
   },
-  "homepage": "https://github.com/thollander/actions-comment-pull-request#readme",
+  "homepage": "https://github.com/ben-z/actions-comment-on-issue",
   "dependencies": {
     "@actions/core": "^1.0.0",
     "@actions/io": "^1.0.0",
