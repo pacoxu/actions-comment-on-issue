@@ -1,7 +1,9 @@
 FROM node:buster-slim
 
-COPY . .
+WORKDIR /usr/src/app
+
+COPY . /usr/src/app
 
 RUN npm install --production
 
-ENTRYPOINT ["node", "/lib/main.js"]
+ENTRYPOINT ["node", "/usr/src/app/lib/main.js"]
